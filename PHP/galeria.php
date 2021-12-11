@@ -1,17 +1,17 @@
 <?php
 
-    namespace Medoo;
-    require 'Medoo.php';
+namespace Medoo;
+require 'Medoo.php';
 
-    $database = new Medoo([
-        'type'=> 'mysql',
-        'host'=> 'localhost',
-        'database'=> 'proyecto_bd',
-        'username'=> 'root',
-        'password'=> ''
-    ]);
+$database = new Medoo([
+    'type'=> 'mysql',
+    'host'=> 'localhost',
+    'database'=> 'proyecto_bd',
+    'username'=> 'root',
+    'password'=> ''
+]);
 
-    $data= $database-> select("tb_places", "*");
+$data= $database-> select("tb_places", "*");
 
 ?>
 
@@ -40,7 +40,7 @@
     session_start();
     for($i=0; $i<$length; $i++){
         $votes= $database-> count("tb_user_likes_place",[
-            "id_place"=> $data[$i]["id_place"];
+            "id_place"=> $data[$i]["id_place"]
         ]);
         
         $hasVoted=[];
@@ -66,7 +66,7 @@
         
         echo "<div>";
         echo "<div> <img src='./uploads/".$data[$i]["place_main_image"]."' alt'".$data[$i]["place_main_image"]."'></div>";//IMAGEN
-        echo ""
+        echo "";
         echo "<p class='footer'>Registrado por:</p>";
         echo "<p class='footer'>Categoría:".$data[$i]["id_place_category"]."</p>";
         echo "<p class='footer'>Fecha de publicación:".$data[$i]["place_pub_date"]."</p>";
@@ -78,7 +78,7 @@
         echo "</div>";
 
         echo "<button class='button-top-10' onclick='voting(this.id)'>Mas detalles</button>";
-        echo "</div";
+        echo "</div>";
     }
     
     ?>
