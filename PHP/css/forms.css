@@ -1,0 +1,237 @@
+/*REGLAS ESTILO FORM REGISTRO*/
+html
+{
+    font-size: 100%;
+}
+
+body
+{
+    background: url(../imgs/pavoreal.jpg) no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.form-container
+{
+    background: linear-gradient(70deg, #2ca880, #57bd9e, #7ad3be, #9ec9de);
+    margin: auto;
+    margin-top: 4em;
+    width: 400px;
+    border-bottom-left-radius: 8em;
+    border-top-right-radius: 8em;
+    padding: 30px;
+    text-align: center;
+    
+}
+
+
+.form-inputs
+{
+   width: 70%;
+   background:white;
+   padding: 1em;
+   border-radius: .5em;
+   margin-bottom: 2em;
+   border: 1px solid white;
+   box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2),
+   inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+   color: #2ca880;
+}
+
+.form-container a
+{
+    text-decoration: none;
+    color:white;
+    font-family: "Roboto Condensed";
+    font-size: 1;
+    font-weight: 400;
+}
+
+.buttom
+{
+    width: 60%;
+    background: #313131ff;
+    border: none;
+    padding: 1em;
+    color: white;
+    margin:  1em 0;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 1em;
+    box-shadow: 
+    6px 6px 16px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+
+.main-title
+{
+    margin-block-end: 1em;
+    text-align: center;
+    color: white;
+    font-family: "Raleway";
+    font-weight: 600;
+    font-size: 2em;
+}
+/*FIN REGLAS ESTILO FORM REGISTRO*/
+
+/*INICIO REGLAS ESTILO FORM LUGARES*/
+.adj-images{
+    width: 200;
+    right: 100;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    width: 40%;
+    height: 10%;
+    border-radius: 1em;
+    background: white;
+    margin: 1em 5em 1.5em;
+   
+}
+
+.btn-submit
+{
+    
+    background: #313131ff;
+    font-family: "Roboto Condensed";
+    font-weight: 600;
+    padding:1em 1em 1em 1em;
+    text-align: center;
+    border: none;
+    color: white;
+    border-radius: 0.5em;
+    margin: 1em;
+    margin-top: 1.5em;
+    box-shadow: 
+    6px 6px 16px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+}
+
+.subtitles
+{
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+  color:white;
+  margin: 2em;
+}
+
+.hiperlinks
+{
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    color:white;
+    margin-left: 40em;
+    text-decoration: none;
+}
+
+.hiperlinks2
+{
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    color:white;
+    margin-left: 45em;
+    text-decoration: none;
+}
+
+.hiperlinks:hover
+{
+  color:#57bd9e;
+}
+
+.hiperlinks::before{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 17%;
+    height: .19em;
+    bottom: 26.5em;
+    background: #FFFFFF;
+    transform: scaleX(0);
+    transition: transform .3s ease;
+    border-radius: .5em;
+    align-items: center;
+}
+.hiperlinks:hover::before{
+    transform: scaleX(1);
+
+}
+
+.hiperlinks2:hover
+{
+  color:#57bd9e;
+}
+
+.hiperlinks2::before{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 8%;
+    height: .19em;
+    bottom: 26.5em;
+    background: #FFFFFF;
+    transform: scaleX(0);
+    transition: transform .3s ease;
+    border-radius: .5em;
+    align-items: center;
+}
+.hiperlinks2:hover::before{
+    transform: scaleX(1);
+
+}
+/*FIN REGLAS ESTILO FORM LUGARES*/
+
+/*Media queries Telefonos*/
+
+@media (max-width: 767.98px) {
+    body {
+        background: url(../imgs/pavoreal.jpg);
+        background-size: auto;
+        margin: 0;
+        padding: 0;
+    }
+.form-container{
+    width: 300px;
+    height: 450;
+    margin-top:7em ;
+    opacity:82%;
+    border-bottom-left-radius: 0em;
+    border-top-right-radius: 0em;
+    padding-top: 15%;
+    margin-top: 0;
+    padding-bottom: 10%;
+
+}
+.adj-images{
+    margin: 1em 5em 1em;
+
+}
+
+
+}
+
+/*Media queries Telefonos*/
+
+/*Tablets Media Queries*/
+@media (max-width: 1024px) {
+    
+    .form-container{
+        border-bottom-left-radius: 0em;
+        border-top-right-radius: 0em;
+        margin-bottom: 10%
+    }
+    body{
+        background-size: auto;
+    }
+
+    
+}
+/*Tablets Media Queries*/
+
+
+
+

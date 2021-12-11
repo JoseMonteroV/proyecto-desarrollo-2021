@@ -1,0 +1,1100 @@
+/*INICIO REGLAS ESTILO PAGINA PRINCIPAL*/
+html
+{
+    font-size: 100%;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(243, 243, 243);
+}
+
+.container
+{
+    display: grid;
+}
+
+.top-section
+{
+    width: 100%;
+    height:170vh;
+    background: url(../imgs/fondo-principal.png) no-repeat center center;
+    background-size: cover;
+}
+
+.inner-grid
+{
+    width: 90%;
+    margin: auto;
+}
+
+.grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(6.25em, auto);
+    gap: 3em 1em;
+}
+
+.menu-items
+{
+    display: inline-flex;
+    list-style-type: none;
+    font-family: "Roboto Condensed";
+    font-weight: 300;
+    margin-left: 55em;
+    
+}
+
+.menu-item
+{
+    margin: 3em 2.5em;
+}
+
+.menu-link
+{
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+
+.menu-link::before{
+    display: inline-block;
+    content: "";
+    position: absolute;
+    width: 5%;
+    height: .19em;
+    bottom: 23.5em;
+    background: #FFFFFF;
+    transform: scaleX(0);
+    transition: transform .3s ease;
+    border-radius: .5em;
+}
+.menu-link:hover::before{
+    transform: scaleX(1);
+
+}
+
+.main-title
+{
+    font-family: "Raleway";
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    margin-block-start: 2em;
+       
+}
+
+.second-title
+{
+    font-family:"Raleway";
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-left: 7.8em;
+    margin-top: -7em;
+}
+
+.third-title
+{
+    font-family: "Roboto Condensed";
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-left: 27em;
+    margin-top: 7.5em;
+}
+
+.line-third-title
+{
+    background-color: #FFFFFF;
+    height: 6px;
+    width: 10em;
+    margin-left: 67em;
+    margin-top: -1em;
+}
+
+.title-about
+{
+    font-family: "Raleway";
+    font-weight: 500;
+    color: #1C261C;
+}
+
+.text-about
+{
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #274637;
+    line-height: 1.5em;
+}
+
+.text-gallery
+{
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #274637;
+    line-height: 1.5em;
+    width: 35%;
+    text-align: justify;
+}
+
+.text-top-10
+{
+    font-family: "Raleway";
+    font-weight: 500;
+    color: #1C261C;
+    text-align: center;
+}
+
+.text-top-10-description
+{
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #274637;
+    text-align: center;
+    line-height: 1.5em; 
+}
+
+.text-footer
+{
+    font-family: "Raleway";
+    font-weight: 500;
+    color: #2D725F;
+    text-decoration: none;
+    display: block; 
+    padding-top: 4em;
+}
+
+.footer-menu-link
+{
+    color:#2D725F;
+    font-size: 2.5em;
+    letter-spacing: 1.5em;
+}
+.button-top-10{
+    display: inline-flex;
+    background:#2D725F;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 1em;
+    cursor: pointer;
+    padding: 1em 2em;
+    border-radius: .5em;
+    margin-left: 120px;
+}
+
+
+.text-top-10-places
+{
+    font-family: "Raleway";
+    font-weight: 300;
+    color: #274637;
+    margin-left: 1em;
+  
+  
+}
+
+
+.button-gallery
+{
+    display: inline-flex;
+    background:#2D725F;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-size: 1.25em;
+    padding: 1em 2em;
+    border-radius: .5em;
+    cursor: pointer;
+}
+
+/* Bounce To Right */
+.hvr-bounce-to-right {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+  }
+  .hvr-bounce-to-right:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #1C261C;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    border-radius: .5em;
+  }
+  .hvr-bounce-to-right:hover, .hvr-bounce-to-right:focus, .hvr-bounce-to-right:active {
+    color: white;
+  }
+  .hvr-bounce-to-right:hover:before, .hvr-bounce-to-right:focus:before, .hvr-bounce-to-right:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  }
+
+.img-gallery
+{
+    border-radius: 1em;
+    width: 35em;
+    height: 20em;
+    margin-left: 47.5em;
+    margin-top: -40em;
+    padding-left: 10em;
+
+}
+
+.imgs-top-10
+{
+    height: 15em;
+    width: 100%;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em;
+}
+
+.img-vote
+{
+    height: 4em;
+    width: 5em;
+    display: inline-flex;
+    margin-inline-start: 20em;
+    margin-top: -5em;
+    
+}
+
+.card-shadow
+{
+    box-shadow: 
+    6px 6px 16px 0 rgba(0, 0, 0, 0.25),
+    -6px -6px 12px 0 rgba(255, 255, 255, 0.3);
+    width: 89.8%;
+    border-radius: 1em;
+    padding-bottom: 10px;
+}
+
+.last-top-10
+{
+    margin: 3em 28.8em 3em;
+    width: 29.3%;
+}
+
+/*INICIO CLASES AUXIRIALES*/
+.text-32{font-size: 2em;}
+.text-59{font-size: 3.6875em;}
+.text-166{font-size: 10.375em;}
+.text-30{font-size: 1.875em;}
+.text-35{font-size: 2.1875em;}
+.text-50{font-size: 3.125em;}
+.text-25{font-size: 1.5625em;}
+.text-70{font-size: 4.375em;}
+.text-20{font-size: 1.25em;}
+.text-18{font-size: 1.125em;}
+
+.spacing-0 {margin: 0em;}
+.spacing-1 {margin-top: 1em;}
+.spacing-2 {margin-top: 2em;}
+.spacing-3 {margin-top: 3em;}
+.spacing-4 {margin-top: 4em;}
+.spacing-5 {margin-top: 5em;}
+.spacing-6 {margin-top: 6em;}
+.spacing-7 {margin-top: 7em;}
+.spacing-8 {margin-top: 8em;}
+.spacing-9 {margin-top: 9em;}
+.spacing-10 {margin-top: 10em;}
+.spacing-11 {margin-top: 11em;}
+/*FIN CLASES AUXILIARES/
+
+/*FIN REGLAS ESTILO PAGINA PRINCIPAL*/
+
+/*INICIO REGLAS ESTILO PERFIL*/
+.title-profile{
+    font-size: 3em;
+    font-family: "Roboto condensed";
+    font-weight: 300;
+    font-style: normal;
+    color: #1C261C;
+    text-align: center;
+}
+
+.container-profile{
+    display: grid;
+}
+
+.inner-grid-profile{
+    width: 90%;
+    margin: auto;
+}
+
+.top-section-profile{
+    width: 100%;
+    background: url(../imgs/puerto-viejo.png) no-repeat;
+    background-size: cover;
+}
+
+.logo-profile{
+    display: inline-flex;
+    color: white;
+    text-decoration: none;
+    font-family: "Raleway";
+    font-weight: 500;
+    font-style: normal;
+    font-size: 36px;
+    margin-right: 60%;
+}
+
+.top-menu-profile{
+    display: inline-flex;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    width: 100%;
+}
+
+.top-menu-profile-1{
+    display: inline-flex;
+    width: 30%;
+}
+
+.icon{
+    list-style: none;
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 1.5em;
+}
+
+.btn-profile{
+    display: inline-flex;
+    background: #274637;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto condensed";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 13px;
+    padding: 1em;
+    padding-right: 2em;
+    padding-left: 2em;
+    margin: .5em;
+    cursor: pointer;
+}
+
+.btn-add-place{
+    display: inline-flex;
+    background: #274637;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto condensed";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    padding: 1em;
+    margin: 5em;
+    cursor: pointer;
+}
+
+.publications{
+    margin: auto;
+    width: 100%; 
+    list-style: none;
+    padding: 1.25em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+
+.details{
+
+    border-radius: 2em;
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+    width: 30%;
+    text-align: center;
+}
+
+.details-img{
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    width: 100%;
+}
+
+.tittle-publication{
+    font-family: "Raleway";
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    color: #0C3653;
+    margin-block-start: 10px;
+    margin-block-end: 10px;
+}
+
+.name-user{
+    color: white;
+    font-family: "Roboto Condensed";
+    font-weight: 400 ;
+    font-size: 20px;
+    margin-top: 15px;
+    
+}
+
+.description{
+    font-family: "Roboto condensed";
+    font-weight: 300;
+    font-style: normal;
+}
+/*FIN REGLAS ESTILO PERFIL*/
+
+/*INICIO REGLAS DE ESTILO GALERIA*/
+.titles{
+    font-family: "Raleway";
+    font-weight: 400;
+    color:#1C261C;
+    text-align: center;
+}
+
+.titles-places{
+    font-family: "Raleway";
+    font-weight: 400;
+    font-size: 2em;
+    color:#1C261C;
+    text-align: center;
+
+}
+
+.gallery li{
+    margin: 0.313em;
+}
+
+.gallery{    
+    margin: auto;
+    width: 100%; 
+    list-style: none;
+    padding: 1.25em;
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    image-rendering: -webkit-optimize-contrast;
+    
+}
+
+.gallery img{
+   width: 19.375em;
+   height: 11em;
+   padding: 0.5em;
+}
+
+.gallery:hover{
+    border: 0.063em solid rgb(176, 217, 243);
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 250ms;   
+}
+
+.footer{
+    font-family: "Roboto Condensed";
+    font-weight: 400;
+    font-size: 1em;
+    color: #2D725F;
+    text-align: left;
+    padding: 0.1em;
+    margin-inline-start: 0.6em;   
+   
+}
+
+.modal{
+    display: none;
+    background-color: rgb(243, 243, 243);     
+}
+
+/*Estilos de modal*/
+.modal:target{
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0,8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-titles{
+    color: #fff;
+    font-size: 1.875em;
+    text-align: center;
+    margin: 0.938em 0;
+}
+
+.image{
+    
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.05em;
+}
+
+.footer-img{
+    font-family: "Roboto Condensed";
+    color: black;
+    padding: 40em 18em 3em 18em;
+    text-align: center;
+    position: absolute; 
+    width: 30%;
+
+}
+
+.image a{
+    color: #fff;
+    font-size: x-large;
+    text-decoration: none;
+    margin: 0 0.625em;
+}
+
+.image a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.image img{
+    width: 35em;
+    height: 20em;
+    max-width: 100%;
+    border-top-right-radius: 3em;
+    border-bottom-left-radius: 3em;
+    box-sizing: border-box;
+    
+}
+
+.close{
+    display: block;
+    background: #2D725F;
+    width: 1.5em;
+    height: 1.5em;
+    margin: 3.5em auto;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.x-button{
+    text-decoration: none;
+    color: white;
+}
+
+/*FIN REGLAS DE ESTILO GALERIA*/
+
+/* INICIO Media queries pagina principal*/
+
+/*Media querie ipad air+*/
+/*Media para pantallas de laptop*/
+@media (min-width:1440px) {
+    .menu-items{
+        padding-top: 1em;
+        margin-left: 50em;
+        
+    }
+    .img-vote{
+        margin-inline-start: 18em;
+    }
+}
+@media (max-width:1600px) {
+    .menu-items{
+        padding-top: 1.5em;
+    }
+
+}
+@media (min-width:1920px){
+    .menu-items{
+        padding-top: 2.5em;
+        padding-left: 30em;
+    }
+    .img-gallery{
+        padding-left: 30em;
+    }
+
+    .img-vote{
+       padding-left: 8em;
+    }
+    .button-top-10{
+        margin-left: 150px;
+    }
+}
+/*Media queris de resolucion 1366*/
+@media (min-width: 1366px)  {
+
+    .imgs-top-10{
+        width: 100%;
+        
+    }
+    .top-section{
+        width: 100%;
+    }
+    
+    /* .img-gallery{
+        margin-left: 40.5em;
+        margin-top: -70em;
+        width: 30em;
+    } */
+    
+    .img-vote{
+        margin-right: 60px;
+        margin-inline-start: 17em;
+    
+    }
+    .last-top-10{
+        margin: 3em 34.8em 3em;
+    }
+    .menu-items{
+        margin-left: 43em;
+    }
+    .second-title{
+        margin-right: 8em;
+    }
+    .img-gallery{
+        margin-left: 32.5em;
+
+    }
+    .card-shadow{
+      
+        margin-right: 0.2em;
+    }
+       
+    
+    }
+    
+    /*Media queris de resolucion 1366*/
+
+
+/*Media para pantallas de laptop*/
+
+/*Media querie ipad air+*/
+@media(max-width: 1024px) and (orientation : portrait) {
+
+    .top-section
+    {
+        background: url(../imgs/fondo-principal-movil2.png) no-repeat;
+        height: 135vh;
+        background-size: cover;
+      
+    }
+
+    .container
+    {
+        display: block;
+    }
+    .menu-items
+    {
+        text-align: center;
+        padding-bottom: 2em;
+    
+    }
+    .main-title
+    {
+        margin-block-start: 1em;
+        font-size: 8em; 
+        padding-top: 160px;
+
+    }
+
+    .second-title
+    {
+        margin-left: 6.4em;
+        margin-top: -11.9em;
+        font-size: 1.5em;
+    }
+
+    .third-title
+    {
+        margin-left: 6.5em;
+        margin-top: 7em;
+       
+    }
+
+    .line-third-title
+    {
+        height: 8px;
+        margin-left: 28.5em;
+    }
+    .grid
+    {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 3em;
+    }
+    /*Profile*/
+    
+    .img-gallery{
+        width: 20em;
+    }
+    .card-shadow{
+        padding-bottom: 15px;
+        margin-top: 3em;
+    }
+    .button-top-10{
+        margin-left: 195px;
+    }
+    .img-vote{
+        padding-left: 1em;
+    }
+
+    .logo-profile{
+        margin-right: 20%;
+        font-size: 35px;
+    }
+    .name-user{
+        font-size: 20px;
+        margin-top: 1px;
+        padding-left: 10em;
+    }
+    .icon{
+        margin-top: 0;
+    }
+    .title-profile{
+        font-size: 3em;
+
+    }
+    .details{
+        width: 90%;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .btn-add-place{
+        margin-left:23em;
+    }
+    .image img{
+        border-top-right-radius: 0em;
+        border-bottom-left-radius:0em;
+    }
+    .footer-img{
+        width: 90%;
+        
+    }
+    .x-button{
+        margin-top: 2em;
+    }
+    .imgs-top-10{
+        width: 100%;
+    }
+    .text-top-10-places{
+        font-size: 2em;
+    }
+    .tittle-publication{
+        font-size: 2em;
+    }
+    .description{
+        font-size: 1.2em;
+    }
+
+    /*Profile*/
+
+
+}
+
+/*Media querie ipad air+*/
+
+/* FIN Media queries pagina principal*/
+
+
+/*Media para android tablet */
+/*Media queris de resolucion Tab S4 */
+
+@media (max-width: 1280px) and (orientation:portrait) {
+
+    .top-section{
+        height: 120vh;
+    }
+    .menu-items{
+        margin-left: 200px;
+        padding-left: 27px;
+        margin-top: 16px;
+        margin-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    .main-title{
+        margin-top: 290px;
+    }
+
+    .third-title{
+        margin-top: 150px;
+        margin-left: 330px;
+    }
+
+    .line-third-title{
+        margin-left: 590px;
+    }
+
+    .top-section
+    {
+        height:109vh;
+    }
+
+    .img-gallery{
+        margin-left: 220px;
+    }
+    .img-vote{
+        margin-left: 25em;
+    }
+
+    .grid{
+        margin-left: 120px;
+    }
+
+    
+    
+    .logo-profile{
+        margin-right: 349px;
+    }
+
+    .name-user{
+        padding-left: 57px;
+    }
+}
+@media (max-width: 360px){
+    .menu-items{
+        padding-bottom: 1em;
+        
+    }
+    .img-vote{
+        margin-inline-start: 1em;
+
+    }
+}
+
+@media (max-width: 767.98px)
+{
+    .top-section
+    {
+        background: url(../imgs/fondo-principal-movil2.png) no-repeat;
+        height: 100vh;
+        background-size: cover;
+    }
+
+    .container
+    {
+        display: block;
+    }
+
+    .menu-items
+    {
+        text-align: center;
+        padding-top: 15px;
+        display: inline-flex;
+        margin-left: 0;
+    
+    
+    }
+    .imgs-top-10{
+        width: 100%;
+    }
+
+
+    .main-title
+    {
+        margin-block-start: 1em;
+        font-size: 4em; 
+        padding-top: 160px;
+
+    }
+
+    .second-title
+    {
+        margin-left: 3em;
+        margin-top: -7em;
+        font-size: 1.5em;
+    }
+
+    .third-title
+    {
+        margin-left: 2.5em;
+        margin-top: 6.5em;
+        font-size: 1.2em;
+    }
+
+    .line-third-title
+    {
+        height: 4px;
+        margin-left: 9.7em;
+    }
+
+    .grid
+    {
+        display: block;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 2em;
+    }
+
+    .card-shadow
+    {
+        margin-bottom: 2em;
+    }
+
+    .spacing-8
+    {
+        margin-top: 3em;
+    }
+
+    .button-gallery
+    {
+        display: block;
+        text-align: center;
+        margin:auto;
+    }
+
+    .spacing-3
+    {
+        margin-top: 0;
+    }
+
+    .text-about
+    {
+        text-align: center;
+
+    }
+
+    .title-about
+    {
+        font-size: 2em;
+        text-align: center;
+    }
+
+
+    .menu-link
+    {
+        font-size: 1em;
+    }
+
+    .menu-item
+    {
+        margin: 1.9em 0.5em 0 1.5em;
+    }
+
+    .text-gallery
+    {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .img-gallery
+    {
+        margin-left: -8em;
+        margin-top: 2em;
+        width: 19em;
+        height: 15em;
+        margin-bottom: 2em;
+        border-radius: 0em;
+    }
+
+    .img-vote
+    {
+        display: block;
+        margin-top: -10.5em; 
+        margin-bottom: 5em;
+        margin-left: 13.4em;
+
+    }
+    
+    .button-top-10
+    {
+        display: inline-flex;
+        padding: 1em 1em;
+        border-radius: .5em;
+        
+        text-align: center;
+        margin-bottom: 1em;
+        margin-inline-start: 5em;
+    }
+
+    .text-footer
+    {
+        padding-left: 2.5em;
+
+    }
+    .text-top-10-places{
+        font-size: 1.7em;
+        padding-bottom: 0.8em;
+    }
+    
+    /*PROFILE*/
+    .logo-profile{
+        margin-right: 20%;
+        font-size: 28px;
+    }
+    .name-user{
+        font-size: 16px;
+        margin-top: 1px;
+    }
+    .icon{
+        margin-top: 0;
+    }
+    .title-profile{
+        font-size: 2em;
+
+    }
+    .details{
+        width: 90%;
+    }
+    .description{
+        font-size: 15px;
+    }
+    .btn-add-place{
+        margin-left:140px;
+    }
+    /*PROFILE*/
+
+    /*GALLERY*/
+    .close{
+        margin:5em auto;
+    }
+
+    .image img{
+        border-top-right-radius: 0em;
+        border-bottom-left-radius:0em;
+        height: 15em;
+    }
+    .footer-img{
+        width: 90%;
+        padding-bottom: 9em;
+        
+    }
+    
+    /*GALLERY*/
+}
+
+
+
+/*Media para android*/
